@@ -1,0 +1,75 @@
+body {
+background-image: linear-gradient(to bottom, rgb(255, 205, 205), rgb(255, 137, 137));
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+#main {
+    margin: 0 auto;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 20px -10px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.redText {
+    text-align: center;
+    color: rgb(223, 0, 0);
+    font-style: italic;
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+ul {
+    font-size: 1.5em;
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+}
+
+li {
+    margin: 0.5em;
+}
+
+.thrash-icon {
+    font-size: .6em;
+    margin-left: 1em;
+    color: rgba(128, 128, 128, 0.47);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.469);
+}
+
+#completedElement {
+    margin-top: -1em;
+    margin-bottom: 2em;
+}
+
+.inputRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+button {
+    font-size: 1.4em;
+    margin-left: 0.4em;
+    padding: 2px 10px;
+}
+
+input {
+    width: 9em;
+    font-size: 1.5em;
+}

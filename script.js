@@ -12,7 +12,7 @@ const allTheToDos = [];
 
 
 // Add default text to the completedElement
-completedElement.textContent = 'Du har ingen slutförd uppgift!'
+completedElement.textContent = '0 completed'
 
 // Add event listeners
 addToDoBtn.addEventListener('click', addToDo);
@@ -24,7 +24,7 @@ function addToDo() {
     infoTextElement.textContent = '';
     todoText = inputToDo.value;
     if (todoText.length == 0) {
-        infoTextElement.textContent = 'Du måste skriva något!';
+        infoTextElement.textContent = 'Input must not be empty';
         return;
     }
     // Add todo to the todo array
@@ -41,7 +41,7 @@ function addToDo() {
     // Create span for waste bin
 
     const thrashSpan = document.createElement('span');
-    thrashSpan.innerText = ' 🗑️';
+    thrashSpan.innerText = '🗑️';
     thrashSpan.classList.add('thrash-icon');
 
     // Add event listener for waste bin
@@ -91,11 +91,11 @@ function addToDo() {
 //Function for updating the number of tasks completed
 const updateCompleted = () => {
     if (completed === 1) {
-        return 'Du har ' + completed + ' slutförd uppgift!';
+        return completed + ' completed';
     }
 
     else {
-        return 'Du har ' + completed + ' slutförda uppgifter!';
+        return completed + ' completed';
     }
 };
 
