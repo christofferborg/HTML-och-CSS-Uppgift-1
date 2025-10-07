@@ -9,6 +9,7 @@ const todoList = document.querySelector('#todoList');
 let todoText = '';
 let completed = 0;
 const allTheToDos = [];
+const flash = document.querySelector('#flash');
 
 
 // Add default text to the completedElement
@@ -23,10 +24,13 @@ function addToDo() {
 
     infoTextElement.textContent = '';
     todoText = inputToDo.value;
+    flash.classList.remove('flashingText');
     if (todoText.length == 0) {
         infoTextElement.textContent = 'Input must not be empty';
-        return;
+        flash.classList.add('flashingText');
+        return; 
     }
+    
     // Add todo to the todo array
     allTheToDos.push(todoText);
 
