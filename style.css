@@ -85,13 +85,19 @@ ul {
 li {
     margin: 0.5em;
     position: relative;
-    animation: movingLi 0.3s;
+    animation: movingLi 0.3s forwards;
+    opacity: 0;
 }
 
 @keyframes movingLi {
-    0% {top: 15px;}
-    100% {top: 0px;}
+    0% {top: 15px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
 }
+
+/* @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity:1;}
+} */
 
 
 .thrash-icon {
