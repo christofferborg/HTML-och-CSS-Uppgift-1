@@ -24,9 +24,13 @@ function addToDo() {
 
     infoTextElement.textContent = '';
     todoText = inputToDo.value;
+
+    /* Remove the class for the red text. So it can be triggered again */
     flash.classList.remove('flashingText');
+
     if (todoText.length == 0) {
         infoTextElement.textContent = 'Input must not be empty';
+        /* Add class to the red text so it animates */
         flash.classList.add('flashingText');
         return; 
     }
